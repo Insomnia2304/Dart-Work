@@ -49,7 +49,7 @@ class Stack {
     if (!_fp.existsSync()) {
         return "File ${_fp.path} was moved or deleted.";
     }
-    return "My custom stack: ${_fp.path}, ${_fp.readAsLinesSync() ?? []}";
+    return "My custom stack: ${_fp.path}, ${_fp.readAsLinesSync()}";
   }
 }
 
